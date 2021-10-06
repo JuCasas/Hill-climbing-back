@@ -30,8 +30,7 @@ public class scanPoints {
         myMap.put(0,firstCoordinates);
         String plazoEntregaString;
         try {
-            File file = new File("C:\\Users\\HP\\Desktop\\DP1\\iteracion10\\" +
-                    "SAGSystems\\src\\main\\java\\com\\example\\SAGSystems\\files\\pedidos.txt");
+            File file = new File("src/main/resources/pedidos.txt");
             Scanner scan = new Scanner(file);
             scan.useDelimiter(",");
             int cordX, cordY,quantity,plazoEntrega,counter=1;

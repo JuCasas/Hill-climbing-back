@@ -16,8 +16,7 @@ public class SagSystemsApplication {
 		SpringApplication.run(SagSystemsApplication.class, args);
 		FileWriter myWriter = null;
 		try {
-			File myObj = new File("C:\\Users\\HP\\Desktop\\DP1\\iteracion10\\" +
-					"SAGSystems\\src\\main\\java\\com\\example\\SAGSystems\\files\\resultados2.txt");
+			File myObj = new File("src/main/resources/resultados2.txt");
 			if (myObj.createNewFile()) {
 				myWriter = new FileWriter(myObj);
 

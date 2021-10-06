@@ -16,7 +16,7 @@ public class scanVehicles {
 
     public HashMap<Integer,Cisternas> createMapDataCisternas() throws FileNotFoundException {
         HashMap <Integer,Cisternas> dataCisternas = new HashMap<>();
-        File file = new File("C:\\Users\\HP\\Desktop\\DP1\\iteracion10\\SAGSystems\\src\\main\\java\\com\\example\\SAGSystems\\files\\cisternas.txt");
+        File file = new File("src/main/resources/cisternas.txt");
         Scanner scan = new Scanner(file);
         int typeNumber=1,capacity,quantity;
         double pesoBruto;
