@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="MySQL - dp1_prueba@localhost" uuid="1da9abd6-1263-4f36-93db-9f13d26186d2">
+    <data-source source="LOCAL" name="route4d@localhost" uuid="a41e67eb-27a8-4377-8208-9b9791794aa5">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/dp1_prueba?useUnicode=yes&amp;characterEncoding=UTF-8</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/route4d</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
-      <driver-properties>
-        <property name="characterEncoding" value="UTF-8" />
-      </driver-properties>
     </data-source>
   </component>
 </project>

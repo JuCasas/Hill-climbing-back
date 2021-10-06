@@ -8,11 +8,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SAGSystems" />
+        <module name="Hill-climbing-back" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Hill-climbing-back" options="-parameters" />
       <module name="SAGSystems" options="-parameters" />
     </option>
   </component>
