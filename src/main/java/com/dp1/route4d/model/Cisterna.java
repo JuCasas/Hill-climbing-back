@@ -1,8 +1,5 @@
-package com.example.SAGSystems.model;
+package com.dp1.route4d.model;
 
-import org.apache.tomcat.jni.Local;
-
-import javax.persistence.criteria.CriteriaBuilder;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;

@@ -1,9 +1,9 @@
-package com.example.SAGSystems.dao;
+package com.dp1.route4d.dao;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
-import com.example.SAGSystems.model.Person;
+
+import com.dp1.route4d.model.Person;
 
 public interface PersonDao {
     //insertar persona con id

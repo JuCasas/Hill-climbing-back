@@ -1,18 +1,16 @@
-package com.example.SAGSystems.algorithm;
+package com.dp1.route4d.reader;
 
-import com.example.SAGSystems.model.Cisternas;
+import com.dp1.route4d.model.Cisternas;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
-public class scanVehicles {
+public class readerVehiculos {
     public HashMap<Integer, Cisternas> dataCisternas = createMapDataCisternas();
 
-    public  scanVehicles() throws FileNotFoundException {}
+    public readerVehiculos() throws FileNotFoundException {}
 
     public HashMap<Integer,Cisternas> createMapDataCisternas() throws FileNotFoundException {
         HashMap <Integer,Cisternas> dataCisternas = new HashMap<>();

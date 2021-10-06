@@ -1,4 +1,4 @@
-package com.example.SAGSystems.model;
+package com.dp1.route4d.model;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

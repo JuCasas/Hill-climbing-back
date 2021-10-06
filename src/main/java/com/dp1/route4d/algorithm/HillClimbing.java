@@ -1,16 +1,17 @@
-package com.example.SAGSystems.algorithm;
+package com.dp1.route4d.algorithm;
 
 import java.io.FileNotFoundException;
-import java.lang.reflect.Array;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalTime;
-import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.*;
 
-import com.example.SAGSystems.model.*;
+import com.dp1.route4d.model.*;
+import com.dp1.route4d.reader.readerPedidos;
+import com.dp1.route4d.reader.readerVehiculos;
+import com.dp1.route4d.model.*;
 
 public class HillClimbing {
 
@@ -33,13 +34,13 @@ public class HillClimbing {
     }
 
     public void createMatrix() throws FileNotFoundException {
-        scanPoints CoordinatesAndOrders = new scanPoints();
+        readerPedidos CoordinatesAndOrders = new readerPedidos();
         this.coordinatesAndOrders = CoordinatesAndOrders.getHola();// EN UNO EMPIEZA EL PRIMER PEDIDO. 0 ES EL LOCAL INICIAL
         this.distancias = CoordinatesAndOrders.getMatrix();
     }
 
     public void readVehicles() throws FileNotFoundException {
-        scanVehicles readVehicles = new scanVehicles();
+        readerVehiculos readVehicles = new readerVehiculos();
         cisternas = readVehicles.getDataCisternas();
         // KEY DEL MAP EMPIEZA EN 1 --> CUIDADO
 
@@ -54,7 +55,7 @@ public class HillClimbing {
         return result;
     }
 
-    public double addCosto(ArrayList<ArrayList<Double>> distancias,Cisterna cisterna) {
+    public double addCosto(ArrayList<ArrayList<Double>> distancias, Cisterna cisterna) {
         ArrayList<PuntoEntrega> ruta = new ArrayList<>(cisterna.getRuta());
         double consumoPetroleo = hallarConsumoPetroleo(distancias,ruta,cisterna.getPesoTotal());
         cisterna.setCosto(consumoPetroleo);
@@ -171,7 +172,7 @@ public class HillClimbing {
         int capacidadVehiculo,capacidad2,cantidad2,cantidadAAsignar,totalCantidadVehiculos,añadido,numPedidoNoAsignado=-1;
         boolean pedidoAsignado=false,noHayCapacidad = false;
         double costoTotal=0;
-        scanVehicles readVehicles = new scanVehicles();
+        readerVehiculos readVehicles = new readerVehiculos();
         HashMap<Integer, Cisternas> vehicles = readVehicles.getDataCisternas();
         Map<Integer,Map<Integer, Cisterna>> rutas = new HashMap<>();
         if(pedidoInf!=1){

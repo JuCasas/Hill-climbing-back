@@ -1,7 +1,6 @@
-package com.example.SAGSystems.algorithm;
+package com.dp1.route4d.reader;
 
-import com.example.SAGSystems.model.Pedido;
-import org.apache.tomcat.jni.Local;
+import com.dp1.route4d.model.Pedido;
 
 import java.io.File;
 import java.math.BigDecimal;
@@ -13,12 +12,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class scanPoints {
+public class readerPedidos {
     public ArrayList<ArrayList<Integer>> distancias = new ArrayList<>();
     public Map<Integer, Pedido> hola = createMap();
 
-    public scanPoints(){}
-    public scanPoints(ArrayList<ArrayList<Integer>> distancias){
+    public readerPedidos(){}
+    public readerPedidos(ArrayList<ArrayList<Integer>> distancias){
         this.distancias = distancias;
     }
 

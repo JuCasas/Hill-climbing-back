@@ -1,5 +1,5 @@
-package com.example.SAGSystems.dao;
-import com.example.SAGSystems.model.Person;
+package com.dp1.route4d.dao;
+import com.dp1.route4d.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
 @Repository("fakeDao")
 public class FakePersonDataAccesService implements PersonDao {

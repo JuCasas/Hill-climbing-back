@@ -1,9 +1,5 @@
-package com.example.SAGSystems.model;
+package com.dp1.route4d.model;
 
-import org.springframework.util.SerializationUtils;
-
-import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 

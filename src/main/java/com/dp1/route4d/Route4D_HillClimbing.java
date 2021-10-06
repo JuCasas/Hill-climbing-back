@@ -1,6 +1,6 @@
-package com.example.SAGSystems;
+package com.dp1.route4d;
 
-import com.example.SAGSystems.algorithm.HillClimbing;
+import com.dp1.route4d.algorithm.HillClimbing;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,10 +10,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 @SpringBootApplication
-public class SagSystemsApplication {
+public class Route4D_HillClimbing {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		SpringApplication.run(SagSystemsApplication.class, args);
+		SpringApplication.run(Route4D_HillClimbing.class, args);
 		FileWriter myWriter = null;
 		try {
 			File myObj = new File("src/main/resources/resultados2.txt");
