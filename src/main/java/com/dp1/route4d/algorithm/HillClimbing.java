@@ -1,20 +1,17 @@
 package com.dp1.route4d.algorithm;
 
 import java.io.FileNotFoundException;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
+import java.util.*;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-import java.util.*;
-
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import com.dp1.route4d.model.*;
 import com.dp1.route4d.reader.readerPedidos;
 import com.dp1.route4d.reader.readerVehiculos;
-import com.dp1.route4d.model.*;
 
 public class HillClimbing {
-
     private ArrayList<ArrayList<Double>> distancias = new ArrayList<ArrayList<Double>>();
     private BestSolution nuevaSolucion = new BestSolution();
     private HashMap<Integer, Cisternas> cisternas = new HashMap<>();
